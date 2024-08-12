@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my projet 2</title>
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar section (start) -->
+    <nav class="white z-depth-5 top-navbar">
+        <div class="nav-wrapper">
+            <a href="#!" class="blue-text hide-on-med-and-up">User management</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"><i
+                    class="material-icons">menu</i></a>
+            <ul class="hide-on-med-and-down">
+                <li><a href="/" class="blue-text">home</a></li>
+                <li><a href="Users.html" class="blue-text">User management</a></li>
+                <li><a href="https://codeyad.com" class="blue-text">codeyad</a></li>
+                <li><a href="https://github.com/jafarm9/html2" class="blue-text">github link</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="img/1723290388.326h.jpeg" class="w_100">
+                </div>
+                <a><img class="circle" src="img/1723290367.168h.jpeg"></a>
+                <a><span class="white-text name">jafar mahmoodnezhad</span></a>
+                <a><span class="white-text email">jafar@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">face</i>AQ Fast Learn</a></li>
+        <li><a href="#!"><i class="material-icons">favorite</i>codyade</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">pages:</a></li>
+        <li><a class="waves-effect" href="/"><i class="material-icons">home</i>Home</a></li>
+        <li><a class="waves-effect" href="Users.html"><i class="material-icons">tag_faces</i>User</a></li>
+    </ul>
+    <!-- navbar section (end) -->
+
+
+    <!-- content section (start) -->
+    <section id="top-actions-section" class="row">
+        <!-- add button -->
+        <div class="p-t-20 p-r-10 p-l-10 col s12 m3 l2">
+            <button class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full buttons-border flex-c">
+                <i class="material-icons m-r-5">add</i>
+                add User
+            </button>
+        </div>
+
+        <!--------------- content section (End) --------------->
+
+
+        <!---------------- search section (start) -------------->
+        <div class="row col s12 m9 l8">
+            <div class="input-field col s12">
+                <input id="search" type="text" class="validate">
+                <label for="search">
+                    <i class="material-icons pos-relative top-7">search</i>
+                    search
+                </label>
+            </div>
+
+            <div class="col l2 hide-on-med-and-down"></div>
+    </section>
+
+    <!---------------- content section (End) ------------->
+
+    <script src="materialize/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
