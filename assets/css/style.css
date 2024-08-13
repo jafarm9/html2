@@ -13,3 +13,10 @@
     }
 }
 
+
+.Users-list-item.active .Users-list-arrow-icon{
+    transform: rotate(180deg);
+}
+.Users-list-item.active , .Users-list-item.active .collapsible-header{
+    background-color: rgba(231, 229, 229, 0.733);
+}
