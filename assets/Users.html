@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my projet 2</title>
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="css/util.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/util.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- navbar section (start) -->
-    <nav class="white z-depth-5 top-navbar">
+    <nav class="white z-depth-5 m-t-3 top-navbar">
         <div class="nav-wrapper">
             <a href="#!" class="blue-text hide-on-med-and-up">User management</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"><i
@@ -51,10 +51,10 @@
 
 
     <!-- content section (start) -->
-    <section id="top-actions-section" class="row m-b-0">
+    <section id="top-actions-section" class="row m-b-0 container">
         <!-- add button -->
         <div class="p-t-20 p-r-10 p-l-10 col s12 m3 l2">
-            <button class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full buttons-border flex-c">
+            <button class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 m-t-20 w-full buttons-border flex-c">
                 <i class="material-icons m-r-5">add</i>
                 add User
             </button>
@@ -77,7 +77,7 @@
     </section>
 
     <section class="User-list-section">
-        <ul class="collapsible">
+        <ul class="collapsible hide-on-med-and-up">
             <li class="Users-list-item">
                 <div class="collapsible-header">
                     <i
@@ -98,21 +98,67 @@
                         </div>
                         <div class="p-all-5">
                             <span class="f-bold">Action:</span>
-                            <i class="material-icons red-text m-l-5 m-r-5">delete forever</i>
                             <i class="material-icons orange-text darken-3 m-l-5 m-r-5">edit</i>
-
+                            <i class="material-icons red-text m-l-5 m-r-5">delete forever</i>
                         </div>
 
                     </div>
             </li>
         </ul>
+        <div class="hide-on-med-and-down show-on-medium-and-up container ">
+            <table  class=" striped centered highlight">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>jafar mah</td>
+                        <td>jafarm9</td>
+                        <td>mahmoodnezhadjafar@gmail.com</td>
+                        <td>Est Azerbayjan - jolfa</td>
+                        <td>
+                            <i class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer">edit</i>
+                            <i class="material-icons red-text m-l-5 m-r-5 hov-pointer">delete forever</i>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination-container container p-l-9 p-r-9 p-t-15 p-b-10 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30">
+          <div class="pagination-item-count flex-l p-l-10 flex-l-m">
+            showing
+            <span class="m-l-5 m-r-5 max-w-50">
+               <input type="number" class="blue-text darken-2 no-border center-align m-b-0" value="10">
+            </span>
+            of
+            <span class="blue-text darken-2 m-l-5 m-r-5">100</span>
+          </div>
+          <div>
+            <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect wa waves-light white-text rounded_pill">keyboard_arrow_left</i>
+            <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect wa waves-light white-text rounded_pill">keyboard_arrow_right</i>
+          </div>
+        </div>
     </section>
+
+
+    <div class="add-User-modal-black"></div>
+    <div class="add-User-modal container"></div>
+    
 
     <!---------------- content section (End) ------------->
 
     <script src="materialize/js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/users.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

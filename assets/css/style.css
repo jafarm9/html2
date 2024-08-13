@@ -20,3 +20,30 @@
 .Users-list-item.active , .Users-list-item.active .collapsible-header{
     background-color: rgba(231, 229, 229, 0.733);
 }
+table.highlight > tbody > tr:hover {
+    background-color: rgba(54, 199, 235, 0.5);
+}
+.container{
+    width: 100%;
+}
+.add-User-modal-black{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+.add-User-modal{
+    position: fixed;
+    height: 70vh;
+    background-color: white;
+    bottom: 0;
+    z-index: 1000;
+    border-radius: 30px 30px 0 0 ;
+    left: 0;
+    right: 0;
+
+}
