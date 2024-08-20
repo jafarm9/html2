@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/util.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
     <title>my projet 2</title>
 </head>
 
@@ -17,14 +16,14 @@
     <!-- navbar section (start) -->
     <nav class="white z-depth-5 m-t-3 top-navbar">
         <div class="nav-wrapper">
-            <a href="#!" class="blue-text hide-on-med-and-up">مدیریت کاربران</a>
+            <a href="#!" class="blue-text hide-on-med-and-up">User management</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text right">
                 <i class="material-icons">menu</i></a>
             <ul class="hide-on-med-and-down dis-flex">
-                <li><a href="/" class="blue-text">خانه</a></li>
-                <li><a href="Users.html" class="blue-text">مدیریت کاربران</a></li>
-                <li><a href="https://codeyad.com" class="blue-text">سایت کدیاد</a></li>
-                <li><a href="https://github.com/jafarm9/html2" class="blue-text">لینک گیت هاب</a></li>
+                <li><a href="/" class="blue-text">home</a></li>
+                <li><a href="Users.html" class="blue-text">User management</a></li>
+                <li><a href="https://codeyad.com" class="blue-text">codeyad</a></li>
+                <li><a href="https://github.com/jafarm9/html2" class="blue-text">github link</a></li>
             </ul>
         </div>
     </nav>
@@ -40,14 +39,14 @@
                 <a><span class="white-text email">jafar@gmail.com</span></a>
             </div>
         </li>
-        <li><a href="#!"><i class="material-icons right sidenav-link-icon">insert_link</i>لینک گیت هاب</a></li>
-        <li><a href="#!"><i class="material-icons right sidenav-link-icon">announcement</i>کدیاد</a></li>
+        <li><a href="#!"><i class="material-icons right sidenav-link-icon">face</i>AQ Fast Learn</a></li>
+        <li><a href="#!"><i class="material-icons right sidenav-link-icon">favorite</i>codyade</a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a class="subheader">صفحات:</a></li>
-        <li><a class="waves-effect" href="/"><i class="material-icons right sidenav-link-icon">home</i>خانه</a></li>
-        <li><a class="waves-effect" href="Users.html"><i class="material-icons right sidenav-link-icon">account_box</i>کاربر</a></li>
+        <li><a class="subheader">pages:</a></li>
+        <li><a class="waves-effect" href="/"><i class="material-icons">home</i>Home</a></li>
+        <li><a class="waves-effect" href="Users.html"><i class="material-icons">tag_faces</i>User</a></li>
     </ul>
     <!-- navbar section (end) -->
 
@@ -59,7 +58,7 @@
             <button
                 id="add-user-button" class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 m-t-20 w-full buttons-border flex-c">
                 <i class="material-icons m-r-5">add</i>
-                اضافه کردن کاربر
+                add User
             </button>
         </div>
 
@@ -72,7 +71,7 @@
                 <input id="search" type="text" class="validate">
                 <label for="search">
                     <i class="material-icons pos-relative top-7">search</i>
-                    جستجو
+                    search
                 </label>
             </div>
 
@@ -89,18 +88,18 @@
                 </div>
                 <div class="collapsible-body">
                     <div class="p-all-5">
-                        <span class="f-bold">نام کاربری:</span>
+                        <span class="f-bold">Username:</span>
                         <span>jafar m9</span>
                         <div class="p-all-5">
-                            <span class="f-bold">ایمیل:</span>
+                            <span class="f-bold">Email:</span>
                             <span>mahmoodnezhdjafar@gmail.com</span>
                         </div>
                         <div class="p-all-5">
-                            <span class="f-bold">آدرس:</span>
-                            <span>آذربایجان شرقی - جلفا</span>
+                            <span class="f-bold">Address:</span>
+                            <span>Est Azerbayjan - jolfa</span>
                         </div>
                         <div class="p-all-5">
-                            <span class="f-bold">عملیات:</span>
+                            <span class="f-bold">Action:</span>
                             <i class="material-icons orange-text darken-3 m-l-5 m-r-5">edit</i>
                             <i class="material-icons red-text m-l-5 m-r-5">delete forever</i>
                         </div>
@@ -113,11 +112,11 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>نام</th>
-                        <th>نام کاربری</th>
-                        <th>ایمیل</th>
-                        <th>آدرس</th>
-                        <th>عملیات</th>
+                        <th>name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -126,7 +125,7 @@
                         <td>jafar mah</td>
                         <td>jafarm9</td>
                         <td>mahmoodnezhadjafar@gmail.com</td>
-                        <td>آذربایجان شرقی - جلفا</td>
+                        <td>Est Azerbayjan - jolfa</td>
                         <td>
                             <i class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer">edit</i>
                             <i class="material-icons red-text m-l-5 m-r-5 hov-pointer">delete forever</i>
@@ -139,11 +138,11 @@
         <div
             class="pagination-container container p-l-9 p-r-9 p-t-15 p-b-10 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30">
             <div class="pagination-item-count flex-l p-l-10 flex-l-m">
-                صفحه
+                showing
                 <span class="m-l-5 m-r-5 max-w-50">
                     <input type="number" class="blue-text darken-2 no-border center-align m-b-0" value="10">
                 </span>
-                از
+                of
                 <span class="blue-text darken-2 m-l-5 m-r-5">100</span>
             </div>
             <div>
@@ -161,22 +160,22 @@
         <div class="row  p-b-10 p-r-40 p-l-40 center-on-small-only">
             <h5>
                 <i class="material-icons m-r-5 m-l-5 pos-relative top-3">person_add</i>
-                اضافه کردن کاربر
+                Add User
             </h5>
             <form>
                 <div class="name input-field col s12">
                     <input id="name" type="text" class="validate">
-                    <label for="name">نام</label>
+                    <label for="name">Name</label>
                 </div>
                 <div class="name input-field col s12">
                     <input id="Username" type="text" class="validate">
-                    <label for="Username">نام کاربری</label>
+                    <label for="Username">Username</label>
                 </div>
                 <div class="name input-field col s12">
-                    <input id="Email" type="email" class="validate">
-                    <label for="Email">ایمیل</label>
+                    <input id="email" type="email" class="validate">
+                    <label for="Email">Email</label>
                 </div>
-                <button type="button" class="waves-effect  waves-light btn blue darken-2  m-t-20 m-b-10 w-full max-w-250 rounded_pill">تایید</button>
+                <button type="button" class="waves-effect  waves-light btn blue darken-2  m-t-20 m-b-10 w-full max-w-250 rounded_pill">submit</button>
             </form>
         </div>
     </div>

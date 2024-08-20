@@ -1,4 +1,16 @@
+@font-face {
+    font-family: BYekan;
+    src: url("../font/BYekan/BYekan-webfont.eot") format("eot"),
+    url("../font/BYekan/BYekan-webfont.ttf") format("ttf"),
+    url("../font/BYekan/BYekan-webfont.woff") format("woff");
+    font-weight: bolder;
+    font-style: normal;
+}
 
+*{
+direction: rtl;
+font-family: BYekan;
+}
 
 .w_100{
     width: 100% !important;
@@ -25,9 +37,7 @@
 table.highlight > tbody > tr:hover {
     background-color: rgba(54, 199, 235, 0.5);
 }
-.container{
-    width: 100%;
-}
+
 .add-User-modal-black{
     position: fixed;
     width: 100%;
@@ -53,5 +63,20 @@ table.highlight > tbody > tr:hover {
 .add-User-modal.show{
 box-shadow: 0 0 10px blue;
     bottom: 0;
+}
 
+.sidenav-link-icon{
+     margin: 0 0 0 25px !important;
+}
+
+.container{
+    width: 100% !important;
+}
+
+.buttons-transition{
+    transition: all 0.2s;
+}
+
+.light-hover{
+    background-color: aqua;
 }
