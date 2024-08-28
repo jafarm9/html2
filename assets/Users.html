@@ -13,7 +13,7 @@
     <title>my projet 2</title>
 </head>
 
-<body dir="rtl">
+<body dir="rtl" x-data="usersData">
     <!-- navbar section (start) -->
     <nav class="white z-depth-5 m-t-3 top-navbar">
         <div class="nav-wrapper">
@@ -120,7 +120,7 @@
                         <th>عملیات</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="decktop_table_body">
                     <tr>
                         <td>1</td>
                         <td>jafar mah</td>
@@ -131,7 +131,6 @@
                             <i class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer">edit</i>
                             <i class="material-icons red-text m-l-5 m-r-5 hov-pointer">delete forever</i>
                         </td>
-
                     </tr>
                 </tbody>
             </table>
@@ -154,6 +153,7 @@
             </div>
         </div>
     </section>
+
 
 
     <div class="add-User-modal-black dis-none"></div>
@@ -182,7 +182,9 @@
     </div>
 
     <!---------------- content section (End) ------------->
-
+    <script src="js/axios.js"></script>
+    <script defer src="js/alpine.js"></script>
+    <script src="js/alpinejscontroller/usersController.js"></script>
     <script src="materialize/js/materialize.min.js"></script>
     <script src="js/users.js"></script>
     <script src="js/main.js"></script>
